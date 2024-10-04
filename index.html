@@ -6,12 +6,50 @@
     <title>Site Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
-        .carousel-item img{
-            max-height: 500px;
-        }
+      .navbar-brand {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+  
+      .video-card img {
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+  
+      .video-card {
+        background-color: #f8f9fa;
+        border: none;
+        transition: transform 0.2s ease;
+      }
+  
+      .video-card:hover {
+        transform: scale(1.05);
+      }
+  
+      .category-card {
+        background-color: #343a40;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .category-card:hover {
+        background-color: #495057;
+      }
+  
+      footer {
+        background-color: #212529;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
     </style>
 </head>
-<body>
+<body class="bg-dark  text-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -24,7 +62,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="videos.html">Videos</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,7 +114,7 @@
             </a>
           </div>
 
-          <div class="jumbotron mt-5">
+          <div class="jumbotron mt-5 text-dark mx-2">
             <h1 class="display-4 text-center mb-3">Frutas Saudáveis para Diabéticos</h1>
             <p class="lead">Melancia, Abacate e Goiaba são ótimas opções para quem busca controlar os níveis de açúcar no sangue.</p>
             <hr class="my-4">
@@ -106,32 +144,8 @@
     </section>
 
     <hr>
-    <section class="container mt-5 mb-2">
-        <h2 class="text-center">Entre em Contato</h2>
-        <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Endereço de email</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Qual a sua fruta favorita</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>Abacate</option>
-                <option>Goiaba</option>
-                <option>Melancia</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-secondary">Enviar</button>
-            </div>
-          </form>
-
-          <hr>
+    
+    <section class="mx-2">
           <h2 class="text-center mt-5 mb-3">Comentarios</h2>
           
 
@@ -159,7 +173,7 @@
               </p>
             </div>
             <small class="d-block text-right mt-3">
-              <a href="#">Todas atualizações</a>
+              <a class="btn btn-outline-info" href="#">Todas atualizações</a>
             </small>
           </div>
 
@@ -171,7 +185,7 @@
               <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <strong class="text-gray-dark">Fulano de Tal</strong>
-                  <a href="#">Seguir</a>
+                  <a class="btn btn-outline-primary" href="#">Seguir</a>
                 </div>
                 <span class="d-block">@melancia_lover</span>
               </div>
@@ -181,7 +195,7 @@
               <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <strong class="text-gray-dark">Cicrano de Tal</strong>
-                  <a href="#">Seguir</a>
+                  <a class="btn btn-outline-primary" href="#">Seguir</a>
                 </div>
                 <span class="d-block">@goiaba_fanatic</span>
               </div>
@@ -191,20 +205,46 @@
               <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <strong class="text-gray-dark">Beltrano de Tal</strong>
-                  <a href="#">Seguir</a>
+                  <a class="btn btn-outline-primary" href="#">Seguir</a>
                 </div>
                 <span class="d-block">@abacate_health</span>
               </div>
             </div>
             <small class="d-block text-right mt-3">
-              <a href="#">Todas sugestões</a>
+              <a class="btn btn-outline-info" href="#">Todas sugestões</a>
             </small>
           </div>
-          
-          
     </section>
 
-    <footer class="text-center mt-5"></footer>
+    <hr>
+
+    <section class="container mt-5 mb-2">
+      <h2 class="text-center">Entre em Contato</h2>
+      <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email: </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Qual a sua fruta favorita: </label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>Abacate</option>
+              <option>Goiaba</option>
+              <option>Melancia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem: </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+          </div>
+        </form>
+  </section>
+
+    <footer class="text-center mt-5">
         <p>&copy; 2024 Frutas Saudáveis. Todos os direitos reservados.</p>
     </footer>
 
